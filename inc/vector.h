@@ -6,13 +6,14 @@
 /*   By: glegendr <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/12 20:26:53 by glegendr          #+#    #+#             */
-/*   Updated: 2017/12/12 21:00:51 by glegendr         ###   ########.fr       */
+/*   Updated: 2017/12/12 21:17:50 by glegendr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef VECTOR_H
 # define VECTOR_H
 #include <stddef.h>
+#define NB_ELEM_INI 32
 
 typedef struct	s_vec
 {
@@ -32,7 +33,7 @@ size_t			private_elem_cap;
 t_vec			v_new(size_t elem_size);
 
 /*
-** Add a new element at the end of the vector.
+** Copy a new element at the end of the vector.
 **
 ** Params:
 **    vec: the current vector.
@@ -56,4 +57,13 @@ void			*v_get(t_vec *vec, size_t index);
 **    vec: the current vector.
 */
 size_t			v_size(t_vec *vec);
+
+/*
+** Free the vector.
+**
+** Param:
+**    vec: the vector to delete.
+*/
+void			v_del(t_vec *vec);
+
 #endif
