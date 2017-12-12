@@ -71,21 +71,21 @@ SRCNAME= ft_isprint \
 		 ft_sqrt     \
 		 ft_putstarstr\
 
-OBJDIR=./
+OBJDIR=obj/
 CLEANOBJDIR=OBJDIR
 CLEANOBJ=OBJ
-SRCDIR=./
+SRCDIR=src/
 
 SRC= $(addprefix $(SRCDIR), $(addsuffix .c, $(SRCNAME)))
 
 OBJ= $(addprefix $(OBJDIR), $(addsuffix .o, $(SRCNAME)))
 
-INCDIR= include/
+INCDIR= inc/
 
 all: $(NAME)
 
 $(OBJDIR)%.o: $(SRCDIR)%.c
-	@$(CC) $(CFLAG) -c $< -o $@
+	@$(CC) $(CFLAG) -c $< -o $@ -I $(INCDIR)
 
 $(OBJDIR):
 	mkdir -p $(OBJDIR)
