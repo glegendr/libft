@@ -6,7 +6,7 @@
 /*   By: glegendr <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/13 14:36:50 by glegendr          #+#    #+#             */
-/*   Updated: 2017/12/13 15:18:13 by glegendr         ###   ########.fr       */
+/*   Updated: 2017/12/13 18:09:19 by glegendr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,5 +22,6 @@ void		*v_extract(t_vec *vec, size_t index)
 	ft_memcpy(tmp, pos, vec->private_elem_size);
 	pos += vec->private_elem_size;
 	free(private_content + vec->private_elem_nb);
+	--vec->private_elem_nb;
 	return (tmp);
 }
