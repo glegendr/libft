@@ -6,13 +6,14 @@
 /*   By: glegendr <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/12 20:26:53 by glegendr          #+#    #+#             */
-/*   Updated: 2017/12/12 21:17:50 by glegendr         ###   ########.fr       */
+/*   Updated: 2017/12/13 14:50:32 by glegendr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef VECTOR_H
 # define VECTOR_H
 #include <stddef.h>
+#include <stdlib.h>
 #define NB_ELEM_INI 32
 
 typedef struct	s_vec
@@ -66,4 +67,13 @@ size_t			v_size(t_vec *vec);
 */
 void			v_del(t_vec *vec);
 
+/*
+** Extract the param pointed by the index.
+**
+** Params:
+**    vec: the current vector.
+**    index: the index.
+** 
+*/
+void			*v_extract(t_vec *vec, size_t index);
 #endif
