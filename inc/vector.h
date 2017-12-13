@@ -6,7 +6,7 @@
 /*   By: glegendr <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/12 20:26:53 by glegendr          #+#    #+#             */
-/*   Updated: 2017/12/13 14:50:32 by glegendr         ###   ########.fr       */
+/*   Updated: 2017/12/13 18:02:26 by glegendr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,4 +76,13 @@ void			v_del(t_vec *vec);
 ** 
 */
 void			*v_extract(t_vec *vec, size_t index);
+
+/*
+** Add the second vector at the end of the first.
+**
+** Params:
+**    vec1: first vector.
+**    vec2: second vector.
+*/
+void			v_join(t_vec *vec1, t_vec *vec2);
 #endif
