@@ -6,7 +6,7 @@
 /*   By: glegendr <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/12 20:26:53 by glegendr          #+#    #+#             */
-/*   Updated: 2017/12/18 22:42:57 by glegendr         ###   ########.fr       */
+/*   Updated: 2017/12/18 23:14:41 by glegendr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,27 +77,6 @@ size_t			v_size(t_vec *vec);
 void			v_del(t_vec *vec);
 
 /*
-** Extract the param pointed by the index.
-**
-** Params:
-**    vec: the current vector.
-**    index: the index.
-** 
-*/
-void			*v_extract(t_vec *vec, size_t index);
-
-/*
-** Extract the param pointed by the index with a max of size.
-**
-** Params:
-**    vec: the current vector.
-**    index: the index.
-**    size: the size to extract.
-** 
-*/
-void			*v_extractn(t_vec *vec, size_t index, size_t size);
-
-/*
 ** Add the second vector at the end of the first.
 **
 ** Params:
@@ -115,4 +94,14 @@ void			v_join(t_vec *vec1, t_vec *vec2);
 ** 
 */
 t_vec			v_split(t_vec *vec, size_t index);
+
+/*
+**
+**
+**
+**
+**
+**
+*/
+void			*v_raw(t_vec *vec);
 #endif

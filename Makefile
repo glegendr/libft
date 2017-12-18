@@ -78,8 +78,7 @@ SRCNAME= ft_isprint \
 		 v_size\
 		 v_split\
 		 v_del\
-		 v_extract\
-		 v_extractn\
+		 v_raw\
 
 OBJDIR=obj/
 CLEANOBJDIR=OBJDIR
