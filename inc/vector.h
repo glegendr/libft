@@ -6,7 +6,7 @@
 /*   By: glegendr <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/12 20:26:53 by glegendr          #+#    #+#             */
-/*   Updated: 2017/12/18 16:52:28 by glegendr         ###   ########.fr       */
+/*   Updated: 2017/12/18 22:42:57 by glegendr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,15 @@ t_vec			v_new(size_t elem_size);
 **    elem: the element to add at the end of vector.
 */
 void			v_push(t_vec *vec, void *elem);
-void			v_push_more(t_vec *vec, void *elem, size_t nb);
+
+/*
+**
+**
+**
+**
+** 
+*/
+void			v_append_raw(t_vec *vec, void *raw, size_t nb);
 
 /*
 ** Get the pointer of element pointed by index.
@@ -97,4 +105,14 @@ void			*v_extractn(t_vec *vec, size_t index, size_t size);
 **    vec2: second vector.
 */
 void			v_join(t_vec *vec1, t_vec *vec2);
+
+/*
+**
+**
+**
+**
+**
+** 
+*/
+t_vec			v_split(t_vec *vec, size_t index);
 #endif

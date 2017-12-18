@@ -76,6 +76,7 @@ SRCNAME= ft_isprint \
 		 v_append_raw\
 		 v_get\
 		 v_size\
+		 v_split\
 		 v_del\
 		 v_extract\
 		 v_extractn\
