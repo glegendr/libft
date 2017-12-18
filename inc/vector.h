@@ -6,7 +6,7 @@
 /*   By: glegendr <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/12 20:26:53 by glegendr          #+#    #+#             */
-/*   Updated: 2017/12/13 18:02:26 by glegendr         ###   ########.fr       */
+/*   Updated: 2017/12/18 16:52:28 by glegendr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,6 +41,7 @@ t_vec			v_new(size_t elem_size);
 **    elem: the element to add at the end of vector.
 */
 void			v_push(t_vec *vec, void *elem);
+void			v_push_more(t_vec *vec, void *elem, size_t nb);
 
 /*
 ** Get the pointer of element pointed by index.
@@ -76,6 +77,17 @@ void			v_del(t_vec *vec);
 ** 
 */
 void			*v_extract(t_vec *vec, size_t index);
+
+/*
+** Extract the param pointed by the index with a max of size.
+**
+** Params:
+**    vec: the current vector.
+**    index: the index.
+**    size: the size to extract.
+** 
+*/
+void			*v_extractn(t_vec *vec, size_t index, size_t size);
 
 /*
 ** Add the second vector at the end of the first.

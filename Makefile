@@ -70,6 +70,15 @@ SRCNAME= ft_isprint \
 		 ft_strnstr  \
 		 ft_sqrt     \
 		 ft_putstarstr\
+		 ft_realloc\
+		 v_new\
+		 v_push\
+		 v_append_raw\
+		 v_get\
+		 v_size\
+		 v_del\
+		 v_extract\
+		 v_extractn\
 
 OBJDIR=obj/
 CLEANOBJDIR=OBJDIR
