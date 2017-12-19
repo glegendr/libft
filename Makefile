@@ -95,16 +95,17 @@ all: $(NAME)
 
 $(OBJDIR)%.o: $(SRCDIR)%.c
 	@$(CC) $(CFLAG) -c $< -o $@ -I $(INCDIR)
+	@(echo "_ \033[032m$@\033[00m")
 
 $(OBJDIR):
-	mkdir -p $(OBJDIR)
+	@mkdir -p $(OBJDIR)
 	
 $(NAME): $(OBJDIR) $(OBJ)
 	@ar -rc  $(NAME) $(OBJ)
 	@(echo "[ \033[35m$(NAME)\033[00m ]")
 
 clean:
-	@rm -rf $(OBJ)
+	@rm -rf $(OBJ) $(OBJDIR)
 
 fclean: clean
 	@rm -rf $(NAME)
