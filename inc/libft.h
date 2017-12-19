@@ -6,7 +6,7 @@
 /*   By: glegendr <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/13 14:28:31 by glegendr          #+#    #+#             */
-/*   Updated: 2017/12/12 21:48:18 by glegendr         ###   ########.fr       */
+/*   Updated: 2017/12/19 17:22:18 by glegendr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ typedef struct		s_list
 	size_t			content_size;
 	struct s_list	*next;
 }					t_list;
-void				*ft_realloc(void *mem, size_t mem_size, size_t new_size);
+void				*ft_realloc(void *mem, int mem_size, int new_size);
 int					ft_abs(int i);
 void				ft_isnegative(int n);
 int					ft_recursive_factorial(int nb);

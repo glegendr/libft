@@ -6,13 +6,13 @@
 /*   By: glegendr <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/12 22:03:59 by glegendr          #+#    #+#             */
-/*   Updated: 2017/12/12 22:14:51 by glegendr         ###   ########.fr       */
+/*   Updated: 2017/12/19 16:58:24 by glegendr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "vector.h"
 
-void		*v_get(t_vec *vec, size_t index)
+void		*v_get(t_vec *vec, int index)
 {
 	void *pos;
 

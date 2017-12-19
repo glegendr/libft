@@ -6,24 +6,23 @@
 /*   By: glegendr <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/12 20:26:53 by glegendr          #+#    #+#             */
-/*   Updated: 2017/12/18 23:14:41 by glegendr         ###   ########.fr       */
+/*   Updated: 2017/12/19 18:28:04 by glegendr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef VECTOR_H
 # define VECTOR_H
-#include <stddef.h>
-#include <stdlib.h>
-#define NB_ELEM_INI 32
+# include <stddef.h>
+# include <stdlib.h>
+# define NB_ELEM_INI 32
 
 typedef struct	s_vec
 {
-void			*private_content;
-size_t			private_elem_nb;
-size_t			private_elem_size;
-size_t			private_elem_cap;
+	void			*private_content;
+	int				private_elem_nb;
+	int				private_elem_size;
+	int				private_elem_cap;
 }				t_vec;
-
 
 /*
 ** Create a new vector.
@@ -31,7 +30,7 @@ size_t			private_elem_cap;
 ** Param:
 **    elem_size: the size of each element of the vector.
 */
-t_vec			v_new(size_t elem_size);
+t_vec			v_new(int elem_size);
 
 /*
 ** Copy a new element at the end of the vector.
@@ -43,13 +42,14 @@ t_vec			v_new(size_t elem_size);
 void			v_push(t_vec *vec, void *elem);
 
 /*
+** Copy raw at the end of the vector.
 **
-**
-**
-**
-** 
+** Params:
+**    vec: the current vector.
+**    raw: the raw to add at the end of vector.
+**    nb: the numbers of elems content in the raw.
 */
-void			v_append_raw(t_vec *vec, void *raw, size_t nb);
+void			v_append_raw(t_vec *vec, void *raw, int nb);
 
 /*
 ** Get the pointer of element pointed by index.
@@ -58,7 +58,7 @@ void			v_append_raw(t_vec *vec, void *raw, size_t nb);
 **    vec: the current vector.
 **    index: the index.
 */
-void			*v_get(t_vec *vec, size_t index);
+void			*v_get(t_vec *vec, int index);
 
 /*
 ** Return the element number in the vector.
@@ -66,7 +66,7 @@ void			*v_get(t_vec *vec, size_t index);
 ** Param:
 **    vec: the current vector.
 */
-size_t			v_size(t_vec *vec);
+int				v_size(t_vec *vec);
 
 /*
 ** Free the vector.
@@ -86,22 +86,19 @@ void			v_del(t_vec *vec);
 void			v_join(t_vec *vec1, t_vec *vec2);
 
 /*
+** Split a vector into two vector at the inex.
 **
-**
-**
-**
-**
-** 
+** Pararms:
+**    vec: the current vector.
+**    index: the index where you have to cut.
 */
-t_vec			v_split(t_vec *vec, size_t index);
+t_vec			v_split(t_vec *vec, int index);
 
 /*
+** Give the raw.
 **
-**
-**
-**
-**
-**
+** Param:
+**    the current vector.
 */
 void			*v_raw(t_vec *vec);
 #endif

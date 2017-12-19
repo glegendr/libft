@@ -6,13 +6,13 @@
 /*   By: glegendr <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/12 21:04:30 by glegendr          #+#    #+#             */
-/*   Updated: 2017/12/12 22:26:33 by glegendr         ###   ########.fr       */
+/*   Updated: 2017/12/19 16:58:42 by glegendr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "vector.h"
 
-t_vec		v_new(size_t elem_size)
+t_vec		v_new(int elem_size)
 {
 	t_vec vec;
 

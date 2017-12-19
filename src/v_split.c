@@ -6,14 +6,14 @@
 /*   By: glegendr <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/18 22:40:22 by glegendr          #+#    #+#             */
-/*   Updated: 2017/12/18 22:59:47 by glegendr         ###   ########.fr       */
+/*   Updated: 2017/12/19 17:43:24 by glegendr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include "vector.h"
 
-t_vec		v_split(t_vec *vec, size_t index)
+t_vec		v_split(t_vec *vec, int index)
 {
 	t_vec	vec2;
 
