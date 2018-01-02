@@ -6,7 +6,7 @@
 /*   By: glegendr <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/13 14:28:31 by glegendr          #+#    #+#             */
-/*   Updated: 2017/12/19 17:22:18 by glegendr         ###   ########.fr       */
+/*   Updated: 2018/01/02 20:06:46 by glegendr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,6 +53,7 @@ void				*ft_memcpy(void *dst, const void *src, size_t n);
 void				*ft_memalloc(size_t size);
 void				ft_putstr_fd(char const *s, int fd);
 char				*ft_itoa(int nbr);
+char				*ft_itoa_base(int nb, int base, char flag);
 char				*ft_strchr(const char *s, int c);
 char				*ft_strdup(const char *src);
 size_t				ft_strlen(const char *s);

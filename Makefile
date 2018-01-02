@@ -15,6 +15,7 @@ SRCNAME= ft_isprint \
 		 ft_strlen  \
 		 ft_strrchr \
 		 ft_itoa    \
+		 ft_itoa_base\
 		 ft_memchr   \
 		 ft_putendl_fd \
 		 ft_strcpy   \
@@ -73,6 +74,7 @@ SRCNAME= ft_isprint \
 		 ft_realloc\
 		 v_new\
 		 v_push\
+		 v_print\
 		 v_append_raw\
 		 v_get\
 		 v_size\

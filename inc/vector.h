@@ -6,7 +6,7 @@
 /*   By: glegendr <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/12 20:26:53 by glegendr          #+#    #+#             */
-/*   Updated: 2017/12/19 18:28:04 by glegendr         ###   ########.fr       */
+/*   Updated: 2017/12/21 17:38:25 by glegendr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -98,7 +98,16 @@ t_vec			v_split(t_vec *vec, int index);
 ** Give the raw.
 **
 ** Param:
-**    the current vector.
+**    vec: the current vector.
 */
 void			*v_raw(t_vec *vec);
+
+/*
+** Print the raw if the raw contains only char.
+**
+** Param:
+**    vec: the current vector.
+**    fd: the file descriptor where you want to write
+*/
+void			v_print(t_vec *vec, int fd);
 #endif
