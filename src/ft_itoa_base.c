@@ -6,17 +6,18 @@
 /*   By: glegendr <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/02 18:34:59 by glegendr          #+#    #+#             */
-/*   Updated: 2018/01/02 20:08:31 by glegendr         ###   ########.fr       */
+/*   Updated: 2018/01/17 20:54:37 by glegendr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static char		*ft_conv_low(char const *base_char, int nb, int neg, int base)
+static char		*ft_conv_low(char const *base_char, long long nb,
+		int neg, int base)
 {
 	char	*s;
 	int		i;
-	int		n;
+	long long		n;
 
 	i = 0;
 	n = nb;
@@ -41,11 +42,12 @@ static char		*ft_conv_low(char const *base_char, int nb, int neg, int base)
 	return (s);
 }
 
-static char		*ft_conv_up(char const *base_char, int nb, int neg, int base)
+static char		*ft_conv_up(char const *base_char, long long nb,
+		int neg, int base)
 {
-	char	*s;
-	int		i;
-	int		n;
+	char			*s;
+	int				i;
+	long long		n;
 
 	i = 0;
 	n = nb;
@@ -70,7 +72,7 @@ static char		*ft_conv_up(char const *base_char, int nb, int neg, int base)
 	return (s);
 }
 
-static char		*ft_convertion_base(char flag, int nb, int neg, int base)
+static char		*ft_convertion_base(char flag, long long nb, int neg, int base)
 {
 	const char base_char_up[] = "0123456789ABCDEF";
 	const char base_char_low[] = "0123456789abcdef";
@@ -85,7 +87,7 @@ static char		*ft_convertion_base(char flag, int nb, int neg, int base)
 		return (ft_conv_up(base_char_up, nb, neg, base));
 }
 
-static char		*ft_convertion(int i, int nb, int neg, int base)
+static char		*ft_convertion(int i, long long nb, int neg, int base)
 {
 	char *s;
 
@@ -112,10 +114,10 @@ static char		*ft_convertion(int i, int nb, int neg, int base)
 	return (s);
 }
 
-char			*ft_itoa_base(int nb, int base, char flag)
+char			*ft_itoa_base(long long nb, int base, char flag)
 {
 	int i;
-	int n;
+	long long n;
 	int neg;
 
 	neg = 0;

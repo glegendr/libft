@@ -6,7 +6,7 @@
 /*   By: glegendr <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/12 20:26:53 by glegendr          #+#    #+#             */
-/*   Updated: 2017/12/21 17:38:25 by glegendr         ###   ########.fr       */
+/*   Updated: 2018/01/17 18:06:00 by glegendr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,6 +40,16 @@ t_vec			v_new(int elem_size);
 **    elem: the element to add at the end of vector.
 */
 void			v_push(t_vec *vec, void *elem);
+
+/*
+** Copy a new element at the start of the vector.
+**
+** Params:
+**    vec: the current vector.
+**    elem: the element to add at the end of vector.
+*/
+void			v_push_first(t_vec *vec, void *elem);
+
 
 /*
 ** Copy raw at the end of the vector.
@@ -98,16 +108,8 @@ t_vec			v_split(t_vec *vec, int index);
 ** Give the raw.
 **
 ** Param:
-**    vec: the current vector.
+**    the current vector.
 */
 void			*v_raw(t_vec *vec);
-
-/*
-** Print the raw if the raw contains only char.
-**
-** Param:
-**    vec: the current vector.
-**    fd: the file descriptor where you want to write
-*/
 void			v_print(t_vec *vec, int fd);
 #endif

@@ -6,7 +6,7 @@
 /*   By: glegendr <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/13 14:28:31 by glegendr          #+#    #+#             */
-/*   Updated: 2018/01/15 17:57:59 by glegendr         ###   ########.fr       */
+/*   Updated: 2018/01/15 19:56:58 by glegendr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,7 @@ typedef struct		s_list
 	size_t			content_size;
 	struct s_list	*next;
 }					t_list;
+void				*ft_memcut(void *data, int size);
 void				ft_stradd(char **s, char c);
 void				*ft_realloc(void *mem, int mem_size, int new_size);
 int					ft_abs(int i);

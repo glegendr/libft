@@ -11,6 +11,7 @@ SRCNAME= ft_isprint \
 		 ft_stradd\
 		 ft_isnegative\
 		 ft_memccpy \
+		 ft_memcut \
 		 ft_putendl \
 		 ft_strcmp  \
 		 ft_strlen  \
@@ -75,6 +76,7 @@ SRCNAME= ft_isprint \
 		 ft_realloc\
 		 v_new\
 		 v_push\
+		 v_push_first\
 		 v_print\
 		 v_append_raw\
 		 v_get\
