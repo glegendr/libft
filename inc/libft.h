@@ -6,7 +6,7 @@
 /*   By: glegendr <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/13 14:28:31 by glegendr          #+#    #+#             */
-/*   Updated: 2018/02/05 22:06:11 by glegendr         ###   ########.fr       */
+/*   Updated: 2018/02/05 22:38:58 by glegendr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 # include <stdio.h>
 # include <unistd.h>
 # include <string.h>
+# include "libmem.h"
 
 typedef struct		s_list
 {
