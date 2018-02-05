@@ -6,7 +6,7 @@
 /*   By: glegendr <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/13 14:28:31 by glegendr          #+#    #+#             */
-/*   Updated: 2018/01/22 21:06:54 by glegendr         ###   ########.fr       */
+/*   Updated: 2018/02/05 22:06:11 by glegendr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,9 +23,7 @@ typedef struct		s_list
 	size_t			content_size;
 	struct s_list	*next;
 }					t_list;
-void				*ft_memcut(void *data, int size);
 void				ft_stradd(char **s, char c);
-void				*ft_realloc(void *mem, int mem_size, int new_size);
 int					ft_abs(int i);
 void				ft_isnegative(int n);
 int					ft_recursive_factorial(int nb);
@@ -43,16 +41,8 @@ void				ft_lstdelone(t_list **alst, void (*del)(void*, size_t));
 void				ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 t_list				*ft_lstnew(void const *content, size_t content_size);
-void				*ft_memccpy(void *dst, const void *src, int c, size_t n);
-void				*ft_memchr(const void *s, int c, size_t n);
-int					ft_memcmp(const void *s1, const void *s2, size_t n);
-void				ft_memdel(void **ap);
-void				*ft_memmove(void *dest, const void *src, size_t n);
-void				*ft_memset(void *s, int c, size_t n);
 void				ft_putchar_fd(char c, int fd);
 void				ft_putendl(char const *s);
-void				*ft_memcpy(void *dst, const void *src, size_t n);
-void				*ft_memalloc(size_t size);
 void				ft_putstr_fd(char const *s, int fd);
 char				*ft_itoa(int nbr);
 char				*ft_uitoa_base(unsigned long long nb, unsigned int base,
