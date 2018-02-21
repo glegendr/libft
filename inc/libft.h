@@ -6,7 +6,7 @@
 /*   By: glegendr <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/13 14:28:31 by glegendr          #+#    #+#             */
-/*   Updated: 2018/02/05 22:38:58 by glegendr         ###   ########.fr       */
+/*   Updated: 2018/02/21 22:18:56 by glegendr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,8 @@ int					ft_sqrt(int i);
 void				ft_putstarstr(char **tab);
 void				ft_putstr_fd(char const *s, int fd);
 int					ft_atoi(const char *s);
+long int			ft_atoli(const char *s);
+long long int		ft_atolli(const char *s);
 void				ft_bzero(void *s, size_t n);
 int					ft_isascii(int c);
 int					ft_isdigit(int c);
