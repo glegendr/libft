@@ -6,7 +6,7 @@
 /*   By: glegendr <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/15 09:57:36 by glegendr          #+#    #+#             */
-/*   Updated: 2017/11/23 14:54:13 by glegendr         ###   ########.fr       */
+/*   Updated: 2018/03/12 21:21:39 by glegendr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,7 @@ static char		*ft_rev(char *s, int i, int neg)
 	if (neg == 1)
 		++y;
 	s1[y] = 0;
+	free(s);
 	return (s1);
 }
 
