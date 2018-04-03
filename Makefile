@@ -46,6 +46,7 @@ SRCNAME= ft_isprint \
 		 ft_striter  \
 		 ft_strncpy  \
 		 ft_tolower  \
+		 tab_join    \
 		 ft_isalpha  \
 		 ft_lstmap   \
 		 ft_strcat   \
