@@ -66,7 +66,16 @@ SRCNAME= ft_isprint \
 		 ft_strnstr  \
 		 ft_sqrt     \
 		 ft_putstarstr\
-
+		 ft_memalloc\
+		 ft_memccpy\
+		 ft_memchr\
+		 ft_memcmp\
+		 ft_memcpy\
+		 ft_memcut\
+		 ft_memdel\
+		 ft_memmove\
+		 ft_memset\
+		 ft_realloc
 OBJDIR=obj/
 CLEANOBJDIR=OBJDIR
 CLEANOBJ=OBJ
