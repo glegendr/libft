@@ -15,18 +15,11 @@
 void	ft_putstarstr(char **tab)
 {
 	int i;
-	int y;
 
-	y = 0;
-	while (tab[y])
+	i = 0;
+	while (tab[i])
 	{
-		i = 0;
-		while (tab[y][i])
-		{
-			write(1, &tab[y][i], 1);
-			++i;
-		}
-		write(1, "\n", 1);
-		++y;
+		ft_putendl(tab[i]);
+		++i;
 	}
 }
