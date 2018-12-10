@@ -7,7 +7,6 @@ CFLAG+= -Werror
 CFLAG+= -Wextra
 CFLAG+= -Wall
 SRCNAME= ft_isprint \
-		 ft_recursive_factorial \
 		 ft_stradd\
 		 ft_isnegative\
 		 ft_putendl \
