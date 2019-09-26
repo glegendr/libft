@@ -10,6 +10,7 @@ SRCNAME= ft_isprint \
 		 ft_stradd\
 		 ft_isnegative\
 		 ft_putendl \
+		 ft_putpoint\
 		 ft_strcmp  \
 		 ft_strlen  \
 		 ft_strrchr \
