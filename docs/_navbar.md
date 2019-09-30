@@ -1,8 +1,6 @@
 
 * [Home](/)
 
-* [Structure](structure.md)
-
 * [Conversion](conversion_functions.md)
 
 * [Listes](listes.md)
