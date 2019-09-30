@@ -1,6 +1,3 @@
-/*
-** All put_something
-*/
 void				ft_putstarstr(char **tab);
 void				ft_putstr_fd(char const *s, int fd);
 void				ft_putchar_fd(char c, int fd);

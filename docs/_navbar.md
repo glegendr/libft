@@ -9,8 +9,8 @@
 
 * [is_something](is_something.md)
 
-* [memory](memory.md)
+* [Memory](memory.md)
 
-* [putme](putme.md)
+* [Putme](putme.md)
 
-* [str](str.md)
+* [Strings](str.md)
