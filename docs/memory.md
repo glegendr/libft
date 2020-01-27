@@ -122,6 +122,7 @@ Params:
 - s: the memory to fill
 - c: the character
 - n: the size of the memory
+
 ``` c
 void		 		*ft_memset(void *s, int c, size_t n);
 ```

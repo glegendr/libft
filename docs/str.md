@@ -103,7 +103,8 @@ char				*ft_strnew(size_t size);
 *see implementation [here](https://github.com/glegendr/libft/blob/master/src/ft_strnew.c)*
 ## ft_strcat
 Append a copy of the null-terminated string s2 to the end of the null-terminated string s1, then add a terminating `\0'.
-The string s1 must have sufficient space to hold the result.
+
+!> The string s1 must have sufficient space to hold the result.
 
 Params:
 - s1: the first string
@@ -143,7 +144,8 @@ void				ft_strclr(char *s);
 *see implementation [here](https://github.com/glegendr/libft/blob/master/src/ft_strclr.c)*
 ## ft_strcpy
 Coppy the string `src` to `dst`
-The source and destination strings should not overlap, as the behavior is undefined.
+
+!> The source and destination strings should not overlap, as the behavior is undefined.
 
 Params:
 -  dst: the destination
@@ -302,7 +304,8 @@ char				*ft_strnstr(const char *s1, const char *s2, size_t n);
 *see implementation [here](https://github.com/glegendr/libft/blob/master/src/ft_strnstr.c)*
 ## ft_strsplit
 Split the string `s` with char `c`
-The char `c` will be discard
+
+?> The char `c` will be discard
 
 Params:
 - s: the string to split
@@ -342,7 +345,8 @@ char				*ft_strtrim(char const *s);
 *see implementation [here](https://github.com/glegendr/libft/blob/master/src/ft_strtrim.c)*
 ## tab_join
 Join the string `s` at the end of the tab `tab`
-The tab will be free.
+
+!> The tab will be free.
 
 Params:
 - tab: the tab
