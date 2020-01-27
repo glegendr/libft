@@ -62,7 +62,6 @@ SRCNAME= ft_isprint \
 		 ft_isdigit  \
 		 ft_putchar_fd\
 		 ft_strclr   \
-		 ft_strlcat  \
 		 ft_strnstr  \
 		 ft_sqrt     \
 		 ft_putstarstr\
