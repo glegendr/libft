@@ -1,3 +1,4 @@
+# Memory functions
 ## ft_bzero
 Fill the memory with `\0` character.
 

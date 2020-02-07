@@ -1,3 +1,4 @@
+# String funtions
 ## ft_stradd
 The ft_stradd function add the char `c` at the end of the string `s`
 
